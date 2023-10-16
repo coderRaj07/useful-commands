@@ -5,3 +5,9 @@ sudo kill -9 `sudo lsof -t -i:6001`
 
 #Install Nodejs 14 by default
 curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+
+#USB enumeration error fix
+sudo usermod -aG vboxusers $USER
+
+#Ref:
+https://www.techrepublic.com/article/fix-virtualbox-usb-error/
