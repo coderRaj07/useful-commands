@@ -11,3 +11,43 @@ sudo usermod -aG vboxusers $USER
 
 #Ref:
 https://www.techrepublic.com/article/fix-virtualbox-usb-error/
+
+
+
+
+## DOCKER COMMON ERRORS
+
+1.     
+sudo sed -i 's/deb.debian.org/deb.debian.org/g' /etc/apt/sources.list
+sudo apt-get update
+
+## Run before building image for an Dockerfile or if possible add these commands in you Dockerfile to avoid installation errors
+
+
+
+2. 
+Building arguments and providing env values during build
+
+## in Dockerfile
+ARG RAILS_MASTER_KEY
+ENV RAILS_MASTER_KEY=$RAILS_MASTER_KEY
+RUN bundle config --local without 'development:test' && \
+    bundle install
+
+## in cmd
+## hardcoded env value
+docker build --build-arg RAILS_MASTER_KEY=8af814b3e08d9e263c6635f231fc541f -t rails-app-raj-6:test2 . 
+## dynamic env value from .env
+docker build --build-arg RAILS_MASTER_KEY=$(grep RAILS_MASTER_KEY .env | cut -d '=' -f2) -t rails-app-raj-7:test2 .
+
+ERROR: Cannot connect to the Docker daemon at unix:///home/rajendra/.docker/desktop/docker.sock. Is the docker daemon running?
+
+## To avoid the issue of Docker daemon; turn on docker for desktop application
+
+
+
+3. 
+## Provide perimissons to specific folders, incase Dockerfile shows permission denied
+USER root
+RUN mkdir -p tmp/cache config/credentials public/assets && chmod -R 777 tmp config public
+USER app_user
