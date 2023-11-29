@@ -12,6 +12,8 @@ sudo usermod -aG vboxusers $USER
 #Ref:
 https://www.techrepublic.com/article/fix-virtualbox-usb-error/
 
+#To make node version 20 to use by default  
+nvm use 20 --delete-prefix --silent
 
 
 
