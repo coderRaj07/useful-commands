@@ -14,7 +14,17 @@ https://www.techrepublic.com/article/fix-virtualbox-usb-error/
 
 #To make node version 20 to use by default  
 nvm use 20 --delete-prefix --silent
+-------------------------------------------------------------------------------------------------------------------------------------------
+# ISSUE: VSCODE SIDEBAR ICONS ARE MISSING 
 
+1.  ctrl+shift+p in VScode
+    enter the following command there
+    View: Reset View Locations 
+
+# ISSUE: VSCODE SIDEBAR PANEL IS SHIFTED TO RIGHT
+2.  Go to settings icon below
+    click on
+    Move side panel to left
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 # ISSUE: VSCODE EXTENSIONS NOT LOADING
