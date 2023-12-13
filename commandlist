@@ -16,8 +16,27 @@ https://www.techrepublic.com/article/fix-virtualbox-usb-error/
 nvm use 20 --delete-prefix --silent
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+# ISSUE: VSCODE EXTENSIONS NOT LOADING
 
-## DOCKER COMMON ERRORS
+# Error loading webview: Error: Could not register service workers: TypeError: Failed to register a ServiceWorker for scope
+
+rm -rf ~/.config/Code/*Cache*
+
+or
+
+code --no-sandbox
+
+or
+
+pgrep -f '/Applications/Visual Studio Code.app' | xargs kill -s TERM
+
+
+#Ref:
+https://stackoverflow.com/questions/67698176/error-loading-webview-error-could-not-register-service-workers-typeerror-fai
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+# ISSUE: DOCKER COMMON ERRORS
 
 1.     
 sudo sed -i 's/deb.debian.org/deb.debian.org/g' /etc/apt/sources.list
