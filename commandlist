@@ -1,12 +1,15 @@
-#To stop server at 6001
+# Watch hidden files in Linux Folder
+Ctrl + H
+
+# To stop server at 6001
 sudo kill -9 `sudo lsof -t -i:6001`
 
-#Uninstall nodejs from codedamn
+# Uninstall nodejs from codedamn
 
-#Install Nodejs 14 by default
+# Install Nodejs 14 by default
 curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 
-#USB enumeration error fix
+# USB enumeration error fix
 sudo usermod -aG vboxusers $USER
 
 #Ref:
