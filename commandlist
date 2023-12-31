@@ -19,7 +19,6 @@ https://www.techrepublic.com/article/fix-virtualbox-usb-error/
 nvm use 20 --delete-prefix --silent
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-
 # ISSUE: [nodemon] Internal watch failed: EMFILE: too many open files, watch '/home/rajendra/Desktop/chatApp_server'
 sudo npm run start
 
