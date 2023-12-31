@@ -23,6 +23,28 @@ nvm use 20 --delete-prefix --silent
 sudo npm run start
 
 -------------------------------------------------------------------------------------------------------------------------------------------
+# ISSUE: 'ERR_REQUIRE_ESM'
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module /home/rajendra/Desktop/short-url-node/node_modules/nanoid/index.js from /home/rajendra/Desktop/short-url-node/controllers/url.js not supported.
+Instead change the require of index.js in /home/rajendra/Desktop/short-url-node/controllers/url.js to a dynamic import() which is available in all CommonJS modules.
+    at Object.<anonymous> (/home/rajendra/Desktop/short-url-node/controllers/url.js:2:19)
+    at Object.<anonymous> (/home/rajendra/Desktop/short-url-node/routes/url.js:5:5)
+    at Object.<anonymous> (/home/rajendra/Desktop/short-url-node/index.js:3:18) {
+  code: 'ERR_REQUIRE_ESM'
+}
+
+Node.js v20.5.1
+[nodemon] app crashed - waiting for file changes before starting...
+
+
+>>>>>>>>>>>>>>>>>>>>> for such issues >>>>>>>>>>>>>>>>>
+don't use
+const {nanoids} = require('nanoid');
+
+instead use them inside async functions where they are required
+const { nanoid } = await import('nanoid');
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 # ISSUE: VSCODE SIDEBAR ICONS ARE MISSING 
 
 1.  ctrl+shift+p in VScode
