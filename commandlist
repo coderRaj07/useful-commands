@@ -1,3 +1,24 @@
+# To remove unwanted packages
+
+For Snap Installations:
+
+sudo snap stop redis
+ps aux | grep redis  # Ensure the process is stopped
+sudo snap remove redis
+sudo rm -rf /var/snap/redis
+
+
+
+For APT Installations:
+
+sudo systemctl stop redis-server
+sudo apt remove --purge redis-server
+sudo rm -rf /etc/redis/
+sudo rm -rf /var/lib/redis/
+sudo rm -rf /var/log/redis/
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 # Watch hidden files in Linux Folder
 Ctrl + H
 
