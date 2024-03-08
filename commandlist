@@ -1,3 +1,11 @@
+# Delete the git branch 
+git push origin --delete <branch_name>
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 # To remove unwanted packages
 
 For Snap Installations:
