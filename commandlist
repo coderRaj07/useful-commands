@@ -5,6 +5,30 @@ git push origin --delete <branch_name>
 
 
 
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Make ubuntu faster
+
+Use Bleachbit
+
+Use Preload
+
+sudo apt update
+sudo apt install preload
+
+Use ZRAM
+
+sudo apt update
+sudo apt install zram-config
+sudo systemctl status zram-config.service
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 # To remove unwanted packages
 
