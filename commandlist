@@ -39,7 +39,12 @@ sudo zramctl                               -------> You can confirm that zram is
 
 sudo apt update
 sudo apt install lxqt
-sudo apt install lightdm ------->To choose UI for selecting lxqt from login page of ubuntu, gear icon on right bottom
+sudo apt install lightdm ------->To choose UI for selecting lxqt from login page of ubuntu, gear icon on right bottom, (use right click)////personally hated it
+
+
+sudo apt purge lxqt
+sudo apt purge lightdm
+sudo apt autoremove
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------
