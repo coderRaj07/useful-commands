@@ -15,18 +15,21 @@ git push origin --delete <branch_name>
 -------------------------------------------------------------------------------------------------------------------------------------------
 # Make ubuntu faster
 
-Use Bleachbit
+# Use Bleachbit
 
-Use Preload
+# Use Preload
 
 sudo apt update
 sudo apt install preload
 
-Use ZRAM
+# Use ZRAM
 
 sudo apt update
 sudo apt install zram-config
-sudo systemctl status zram-config.service
+sudo systemctl start zram-config.service   -------> Start the zram-config service by running:
+sudo systemctl enable zram-config.service  -------> This command ensures that the zram-config service starts automatically whenever you boot your system.
+sudo systemctl status zram-config.service  -------> You can check the status of zram devices by running
+sudo zramctl                               -------> You can confirm that zram is configured and working by checking the status of the zram devices on your system. 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------
