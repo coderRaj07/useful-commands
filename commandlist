@@ -39,6 +39,7 @@ sudo zramctl                               -------> You can confirm that zram is
 
 sudo apt update
 sudo apt install lxqt
+sudo apt install lightdm ------->To choose UI for selecting lxqt from login page of ubuntu, gear icon on right bottom
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------
