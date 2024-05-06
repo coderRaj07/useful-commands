@@ -7,10 +7,13 @@ git push origin --delete <branch_name>
 
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+Unable to access location
+
+Error mounting/dev/sdb5 at/media/rajendra/HDD5: Unknown error when mounting/dev/sdb5
 
 
-
-
+`sudo ntfsfix -d /dev/sdb5`
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 # Make ubuntu faster
