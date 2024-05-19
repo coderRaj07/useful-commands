@@ -1,7 +1,8 @@
 # Delete the git branch 
 git push origin --delete <branch_name>
 
-
+# Work as a superuser on coding projects
+sudo chown <your_username> <your_project_directory>
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------
