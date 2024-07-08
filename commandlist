@@ -8,7 +8,9 @@ git push origin --delete <branch_name>
 
 # Work as a superuser on coding projects
 sudo chown <your_username> <your_project_directory>
-
+-------------------------------------------------------------------------------------------------------------------------------------------
+gopls: failed to install gopls(golang.org/x/tools/gopls@latest):Error:Command failed: /usr/local/go/bin/go install -v golang.org/x/tools/gopls@latest
+https://stackoverflow.com/questions/78720822/gopls-failed-to-install-goplsgolang-org-x-tools-goplslatesterrorcommand-fa/78720832#78720832
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 # Go version mismatch during compilation
