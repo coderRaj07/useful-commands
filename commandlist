@@ -12,6 +12,8 @@ sudo chown <your_username> <your_project_directory>
 gopls: failed to install gopls(golang.org/x/tools/gopls@latest):Error:Command failed: /usr/local/go/bin/go install -v golang.org/x/tools/gopls@latest
 https://stackoverflow.com/questions/78720822/gopls-failed-to-install-goplsgolang-org-x-tools-goplslatesterrorcommand-fa/78720832#78720832
 
+https://chatgpt.com/share/ad116437-3b19-4ac7-b822-fee5992d4577
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 # Go version mismatch during compilation
 https://chat.openai.com/share/668c27c7-558e-48bd-b625-768e04326362
