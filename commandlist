@@ -146,6 +146,13 @@ const { nanoid } = await import('nanoid');
     click on
     Move side panel to left
 
+# FEATURE: VSCODE MAKE DEFAULT TERMINAL
+3.  ctrl+shift+p in VScode
+    enter the following command there
+    Terminal: Select Default Profile
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 # ISSUE: VSCODE EXTENSIONS NOT LOADING
 
@@ -178,7 +185,6 @@ sudo apt-get update
 
 2. 
 Building arguments and providing env values during build
-
 ## in Dockerfile
 ARG RAILS_MASTER_KEY
 ENV RAILS_MASTER_KEY=$RAILS_MASTER_KEY
